@@ -49,11 +49,11 @@
 - Default model: `claude-opus-4-5`. Provider detection is prefix-based (`claude-` -> Anthropic, `gemini-` -> Google, etc.).
   - Note: Changed default from `gpt-5.4` to `claude-opus-4-5` — I find Anthropic's reasoning quality better for financial analysis tasks.
   - Personal preference: I use `gemini-2.5-pro` when cost is a concern — it's significantly cheaper and still solid for most research queries.
+  - Budget option: `gemini-2.5-flash` is even cheaper and fast enough for quick ticker lookups or simple screening tasks.
 - Fast models for lightweight tasks: see `FAST_MODELS` map in `src/model/llm.ts`.
 - Anthropic uses explicit `cache_control` on system prompt for prompt caching cost savings.
 - Users switch providers/models via `/model` command in the CLI.
 
 ## Tools
 
-- `financial_search`: primary tool for all financial data queries (prices, metrics, filings). Delegates to multiple sub-tools internally.
-- `financial_metrics`: direct metric look
+- `financial_search`: primary tool f
