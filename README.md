@@ -81,6 +81,6 @@ cp env.example .env
 # OPENAI_API_KEY=your-openai-api-key
 # ANTHROPIC_API_KEY=your-anthropic-api-key (optional)
 # GOOGLE_API_KEY=your-google-api-key (optional)
-# FINANCIAL_DATASETS_API_KEY=your-financial-datasets-api-key
-# EXA_API_KEY=your-exa-api-key (optional, enables web search)
 ```
+
+> **Note:** The Exa API key is truly optional — Dexter works fine without web search, relying solely on the Financial Datasets API for structured financial data.
